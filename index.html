@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Search</title>
+  </head>
+  <body>
+    <div class="header">
+      <nav class="margin">
+        <img src="./img/logo.png" alt="logo" />
+        <div class="group" id="non">
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Freelancers</a></li>
+            <li><a href="">Solar Companies</a></li>
+          </ul>
+        
+        <ul>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Messages</a></li>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="19"
+                viewBox="0 0 22 24"
+                fill="none"
+              >
+                <path
+                  d="M21.2744 15.1388L19.0342 12.8986V9.93089C19.0316 7.88002 18.2687 5.90296 16.893 4.38199C15.5172 2.86102 13.6264 1.90419 11.586 1.69653V0H9.93089V1.69653C7.89056 1.90419 5.99971 2.86102 4.62396 4.38199C3.24821 5.90296 2.48529 7.88002 2.48272 9.93089V12.8986L0.242479 15.1388C0.0872682 15.294 4.68716e-05 15.5044 0 15.7239V18.2066C0 18.4261 0.0871905 18.6366 0.242391 18.7918C0.397591 18.947 0.608088 19.0342 0.827574 19.0342H6.62059V19.6772C6.60259 20.7271 6.97264 21.7467 7.65984 22.5407C8.34704 23.3346 9.30305 23.847 10.3447 23.9798C10.92 24.0368 11.5009 23.9728 12.05 23.7919C12.5991 23.611 13.1042 23.3171 13.5329 22.9293C13.9616 22.5414 14.3044 22.0681 14.5392 21.5398C14.774 21.0115 14.8957 20.4399 14.8963 19.8618V19.0342H20.6893C20.9088 19.0342 21.1193 18.947 21.2745 18.7918C21.4297 18.6366 21.5169 18.4261 21.5169 18.2066V15.7239C21.5169 15.5044 21.4296 15.294 21.2744 15.1388ZM13.2412 19.8618C13.2412 20.5202 12.9796 21.1517 12.514 21.6173C12.0484 22.0829 11.4169 22.3445 10.7585 22.3445C10.1 22.3445 9.46851 22.0829 9.00291 21.6173C8.53731 21.1517 8.27574 20.5202 8.27574 19.8618V19.0342H13.2412V19.8618ZM19.8618 17.3791H1.65515V16.0665L3.89539 13.8263C4.0506 13.6711 4.13782 13.4606 4.13787 13.2412V9.93089C4.13787 8.175 4.83539 6.49102 6.07699 5.24942C7.3186 4.00782 9.00257 3.3103 10.7585 3.3103C12.5143 3.3103 14.1983 4.00782 15.4399 5.24942C16.6815 6.49102 17.379 8.175 17.379 9.93089V13.2412C17.3791 13.4606 17.4663 13.6711 17.6215 13.8263L19.8618 16.0665V17.3791Z"
+                  fill="white"
+                />
+                </svg></a>
+          </li>
+          <li>
+          <a href=""
+            ><img class="profile" src="./img/result3.png" alt=""
+          /></a>
+          </li>
+        </ul>
+      </div>
+        <div id="demo" class="burger-menu">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </div>
+      </nav>
+    </div>
+    <div class="content margin">
+      <div class="hero">
+        <div class="hero_txt">
+          <h1>Green Energy Talents</h1>
+          <p>Browse for talents. Filter your search below</p>
+        </div>
+        <div class="hero_search">
+          <input type="search" name="search" id="search" />
+          <input type="submit" value="Search" />
+        </div>
+        <div class="hero_filter">
+          <h4>Filtered by:</h4>
+          <select name="Location" id="location">
+            <option value="">Location</option>
+          </select>
+          <select name="category" id="category">
+            <option value="">Category</option>
+          </select>
+          <select name="certifications" id="certifications">
+            <option value="">Certifications</option>
+          </select>
+          <select name="availability" id="availability">
+            <option value="">Availability</option>
+          </select>
+          <select name="rating" id="rating">
+            <option value="">Rating</option>
+          </select>
+          <a href="#" class="reset"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M4.08918 7.41366C5.20086 5.49505 6.97191 4.04582 9.07259 3.33583C11.1733 2.62584 13.4604 2.70347 15.5081 3.55427C17.5558 4.40507 19.2245 5.97105 20.2035 7.96063C21.1825 9.95021 21.4051 12.2278 20.8299 14.3693C20.2546 16.5108 18.9207 18.3702 17.0765 19.6014C15.2323 20.8326 13.0035 21.3516 10.8051 21.0618C8.60668 20.772 6.58854 19.6931 5.1264 18.026C3.66427 16.359 2.85781 14.2174 2.85718 12" stroke="#2A3F61" stroke-width="1.90476" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8.57143 7.42885H4V2.85742" stroke="#2A3F61" stroke-width="1.90476" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>Reset</a>
+        </div>
+        <div class="result_no">100,001 talents available</div>
+
+        <div class="result">
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result.png" class="result_img" alt="" />
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result.png" class="result_img" alt="" />
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result.png" class="result_img" alt="" />
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result.png" class="result_img" alt="" />
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result2.png" class="result_img" alt="" />
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result2.png" class="result_img" alt="" />
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result2.png" class="result_img" alt="" />
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result2.png" class="result_img" alt="" />
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result3.png" class="result_img" alt="" />
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result3.png" class="result_img" alt="" />
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result3.png" class="result_img" alt="" />
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result3.png" class="result_img" alt="" />
+
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result4.png" class="result_img" alt="" />
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result4.png" class="result_img" alt="" />
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result4.png" class="result_img" alt="" />
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <!-- <img src="./img/result.png" alt=""> -->
+            <img src="./img/result4.png" class="result_img" alt="" />
+
+            <div class="flex">
+              <div class="left">
+                <h2>Olumide Adeyemi</h2>
+                <div class="left_loc">
+                  <p>Commercial Projects</p>
+                  <p>Lagos, Nigeria</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="123"
+                  height="32"
+                  viewBox="0 0 123 32"
+                  fill="none"
+                >
+                  <path
+                    d="M15.6 28C12.82 27.3 10.5252 25.7048 8.7156 23.2144C6.9052 20.7248 6 17.96 6 14.92V7.6L15.6 4L25.2 7.6V14.92C25.2 17.96 24.2952 20.7248 22.4856 23.2144C20.6752 25.7048 18.38 27.3 15.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M10.6339 20.8961L10.6338 20.896C9.30882 19.1954 8.6499 17.3137 8.6499 15.2436V10.297L15.5999 7.86448L22.5499 10.297V15.2436C22.5499 17.3137 21.8913 19.1955 20.5669 20.8961C19.2554 22.5799 17.6017 23.6593 15.5999 24.1426C13.5981 23.6593 11.9447 22.5799 10.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask0_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="11"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 15.3994L13 14.3994L15 16.3994L19 12.3994L20 13.3994L15 18.3994L12 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask0_2022_2231)">
+                    <path
+                      d="M11.1997 10.5996H20.7997V20.1996H11.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                  <path
+                    d="M44.6 28C41.82 27.3 39.5252 25.7048 37.7156 23.2144C35.9052 20.7248 35 17.96 35 14.92V7.6L44.6 4L54.2 7.6V14.92C54.2 17.96 53.2952 20.7248 51.4856 23.2144C49.6752 25.7048 47.38 27.3 44.6 28Z"
+                    fill="#F87615"
+                  />
+                  <path
+                    d="M39.6339 20.8961L39.6338 20.896C38.3088 19.1954 37.6499 17.3137 37.6499 15.2436V10.297L44.5999 7.86448L51.5499 10.297V15.2436C51.5499 17.3137 50.8913 19.1955 49.5669 20.8961C48.2554 22.5799 46.6017 23.6593 44.5999 24.1426C42.5981 23.6593 40.9447 22.5799 39.6339 20.8961Z"
+                    stroke="#2A3F61"
+                    stroke-width="0.5"
+                  />
+                  <mask
+                    id="mask1_2022_2231"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="40"
+                    y="11"
+                    width="10"
+                    height="8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M41 15.3994L42 14.3994L44 16.3994L48 12.3994L49 13.3994L44 18.3994L41 15.3994Z"
+                      fill="white"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </mask>
+                  <g mask="url(#mask1_2022_2231)">
+                    <path
+                      d="M40.1997 10.5996H49.7997V20.1996H40.1997V10.5996Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="right">
+                <p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="19"
+                    viewBox="0 0 20 19"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z"
+                      fill="#FFC727"
+                    />
+                  </svg>
+                  4.5/5.0
+                </p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="24"
+                  viewBox="0 0 17 24"
+                  fill="none"
+                >
+                  <path
+                    d="M8.43243 0C6.19601 0 4.05119 0.884997 2.4698 2.4603C0.888414 4.03561 0 6.17218 0 8.4C0 11.256 1.43351 13.764 3.6139 15.288V18C3.6139 18.3183 3.74082 18.6235 3.96673 18.8485C4.19264 19.0736 4.49904 19.2 4.81853 19.2H12.0463C12.3658 19.2 12.6722 19.0736 12.8981 18.8485C13.124 18.6235 13.251 18.3183 13.251 18V15.288C15.4314 13.764 16.8649 11.256 16.8649 8.4C16.8649 6.17218 15.9764 4.03561 14.3951 2.4603C12.8137 0.884997 10.6689 0 8.43243 0ZM4.81853 22.8C4.81853 23.1183 4.94545 23.4235 5.17136 23.6485C5.39727 23.8736 5.70368 24 6.02317 24H10.8417C11.1612 24 11.4676 23.8736 11.6935 23.6485C11.9194 23.4235 12.0463 23.1183 12.0463 22.8V21.6H4.81853V22.8Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_links">
+          <div class="address flex_2">
+            <h3>This would contain the coporate addresses of the company</h3>
+            <p class="mail_to">Mailto:</p>
+            <div class="flex_3">
+              <a href=""><img src="./img/footerlogo.png" alt="" /></a>
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M25.3333 4C26.0406 4 26.7189 4.28095 27.219 4.78105C27.719 5.28115 28 5.95942 28 6.66667V25.3333C28 26.0406 27.719 26.7189 27.219 27.219C26.7189 27.719 26.0406 28 25.3333 28H6.66667C5.95942 28 5.28115 27.719 4.78105 27.219C4.28095 26.7189 4 26.0406 4 25.3333V6.66667C4 5.95942 4.28095 5.28115 4.78105 4.78105C5.28115 4.28095 5.95942 4 6.66667 4H25.3333ZM24.6667 24.6667V17.6C24.6667 16.4472 24.2087 15.3416 23.3936 14.5264C22.5784 13.7113 21.4728 13.2533 20.32 13.2533C19.1867 13.2533 17.8667 13.9467 17.2267 14.9867V13.5067H13.5067V24.6667H17.2267V18.0933C17.2267 17.0667 18.0533 16.2267 19.08 16.2267C19.5751 16.2267 20.0499 16.4233 20.3999 16.7734C20.75 17.1235 20.9467 17.5983 20.9467 18.0933V24.6667H24.6667ZM9.17333 11.4133C9.76742 11.4133 10.3372 11.1773 10.7573 10.7573C11.1773 10.3372 11.4133 9.76742 11.4133 9.17333C11.4133 7.93333 10.4133 6.92 9.17333 6.92C8.57571 6.92 8.00257 7.1574 7.57999 7.57999C7.1574 8.00257 6.92 8.57571 6.92 9.17333C6.92 10.4133 7.93333 11.4133 9.17333 11.4133ZM11.0267 24.6667V13.5067H7.33333V24.6667H11.0267Z"
+                    fill="black"
+                  /></svg></a>
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="24"
+                  viewBox="0 0 14 24"
+                  fill="none"
+                >
+                  <path
+                    d="M9 9H13.5V13.5H9V24H4.5V13.5H0V9H4.5V7.1175C4.5 5.334 5.061 3.081 6.177 1.8495C7.293 0.615 8.6865 0 10.356 0H13.5V4.5H10.35C9.603 4.5 9 5.103 9 5.8485V9Z"
+                    fill="black"
+                /></svg></a>
+            </div>
+          </div>
+          <div class="companies flex_2">
+            <h3>For Companies</h3>
+            <a href="#">Sponsorship</a>
+            <a href="#">Instollar Business</a>
+            <a href="#">Reviews</a>
+            <a href="#">Industrial</a>
+          </div>
+          <div class="talent flex_2">
+            <h3>For Talent</h3>
+            <a href="#">Training</a>
+            <a href="#">Top Talents</a>
+            <a href="#">Residential</a>
+            <a href="#">Commercial</a>
+          </div>
+          <div class="llc flex_2">
+            <h3>Instollar LLC</h3>
+            <a href="#">About Us</a>
+            <a href="#">How it works</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div class="footer_content margin">
+            <div class="copyright">Copyright © 2023 Instollar LLC, All Right Reserved</div>
+                <ul class="footera">
+                    <li><a href="">About</a></li>
+                    <li><a href="">How it works</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+        
+    </footer>
+
+    <script src="./style.js"></script>
+
+  </body>
+</html>
