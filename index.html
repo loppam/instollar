@@ -64,8 +64,25 @@
           <p>Browse for talents. Filter your search below</p>
         </div>
         <div class="hero_search">
-          <input type="search" name="search" id="search" />
-          <input type="submit" value="Search" />
+          <div class="search_box">
+            <div class="search_flex">
+            <select class="dropdown" name="job" id="worker">
+              <option value="">Job</option>
+              <option value="commercial installer">Commercial Installer</option>
+              <option value="private installer">Private Installer</option>
+            </select>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M16.0002 16.0003C16.7335 16.0003 17.3615 15.739 17.8842 15.2163C18.4059 14.6945 18.6668 14.067 18.6668 13.3337C18.6668 12.6003 18.4059 11.9723 17.8842 11.4497C17.3615 10.9279 16.7335 10.667 16.0002 10.667C15.2668 10.667 14.6393 10.9279 14.1175 11.4497C13.5948 11.9723 13.3335 12.6003 13.3335 13.3337C13.3335 14.067 13.5948 14.6945 14.1175 15.2163C14.6393 15.739 15.2668 16.0003 16.0002 16.0003ZM16.0002 29.3337C12.4224 26.2892 9.75038 23.4612 7.98416 20.8497C6.21705 18.239 5.3335 15.8225 5.3335 13.6003C5.3335 10.267 6.40594 7.61144 8.55083 5.63366C10.6948 3.65588 13.1779 2.66699 16.0002 2.66699C18.8224 2.66699 21.3055 3.65588 23.4495 5.63366C25.5944 7.61144 26.6668 10.267 26.6668 13.6003C26.6668 15.8225 25.7837 18.239 24.0175 20.8497C22.2504 23.4612 19.5779 26.2892 16.0002 29.3337Z" fill="#384766"/>
+            </svg>
+            <select class="dropdown" name="location" id="location">
+              <option value="">State</option>
+              <option value="lagos">Lagos</option>
+              <option value="kwara">Kwara</option>
+              <option value="oyo">Oyo</option>
+            </select>
+            </div>
+            <input class="submit" type="submit" value="Search">
+          </div>
         </div>
         <div class="hero_filter">
           <h4>Filtered by:</h4>
