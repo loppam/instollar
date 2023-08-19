@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+:root {
+  --primary-indigo: #2a3f61;
+  --secondary--indigo: #384766;
+  --primary-font-color: #ffffff;
+  --secondary-font-color: #000000;
+}
+a {
+  text-decoration: none;
+}
+.hero_txt h1 {
+  color: var(--primary-indigo);
+  font-family: Manrope;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero_txt p {
+  color: var(--primary-indigo);
+  font-family: Manrope;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.hero_filter {
+  margin-top: 2.63rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: center;
+}
+.hero_filter h4 {
+  color: var(--primary-indigo);
+  font-family: Manrope;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.hero_filter select {
+  color: var(--primary-indigo);
+  border-color: var(--primary-indigo);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  font-family: Manrope;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero_filter a {
+  color: var(--primary-indigo);
+  font-family: Manrope;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.result_no {
+  color: var(--primary-indigo);
+  margin-top: 0.8rem;
+  font-family: Manrope;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+body {
+  width: 85%;
+  margin: 0 auto;
+}
+.card {
+  width: 23.75rem;
+  border: 1px solid var(--primary-indigo);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+.jb {
+  display: flex;
+  justify-content: space-between;
+}
+.jb p:first-child {
+  color: var(--primary-indigo);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+  background-color: #ffc727;
+  border-radius: 0.5rem;
+}
+
+.jb p:last-child {
+  color: var(--primary-indigo);
+  font-family: Manrope;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  border-radius: 0.5rem;
+}
+
+.card .product_name {
+  width: 23.75rem;
+  height: 4.5625rem;
+  color: #000;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 2.25rem */
+}
+
+.card .product_rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .product_rating button {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 0.5rem;
+  background: #2a3f61;
+  border: none;
+  width: 9.127rem;
+  height: 3.1875rem;
+}
+.card img {
+  width: 23.75rem;
+}
+.price p {
+  color: #000;
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+}
+.shopping_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26.75rem, 10fr));
+  row-gap: 1.83rem;
+  margin: 5rem 0;
+}
+
