@@ -72,8 +72,9 @@ a {
 }
 
 body {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
+  
 }
 .card {
   width: 23.75rem;
@@ -150,9 +151,26 @@ body {
   margin: 0;
 }
 .shopping_list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(26.75rem, 10fr));
-  row-gap: 1.83rem;
-  margin: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 33%;
+  gap: 3.9rem;
+  margin: 5rem auto;
+  align-items: center;
+  justify-content: center;
 }
 
+
+@media (max-width: 440px) {
+  .shopping_list{
+    all: unset;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 33%;
+    gap: 3.9rem;
+    margin: -60rem 0;
+    align-items: center;
+    justify-content: center;
+    scale: 0.71;
+  }
+}
