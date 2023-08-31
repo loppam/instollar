@@ -3,265 +3,344 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script> -->
-    <title>Document</title>
   </head>
   <body>
-    <div class="lp_head">
+    <div class="hero">
       <div class="content">
-        <div class="flex_margin">
-          <h1>Find top <span>Green Energy Talents</span> near you</h1>
-          <div class="hero_search">
-            <div class="search_box">
-              <div class="search_flex">
-                <select class="dropdown" name="job" id="worker">
-                  <option value="">Job</option>
-                  <option value="commercial installer">
-                    Commercial Installer
-                  </option>
-                  <option value="private installer">Private Installer</option>
-                </select>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                >
-                  <path
-                    d="M16.0002 16.0003C16.7335 16.0003 17.3615 15.739 17.8842 15.2163C18.4059 14.6945 18.6668 14.067 18.6668 13.3337C18.6668 12.6003 18.4059 11.9723 17.8842 11.4497C17.3615 10.9279 16.7335 10.667 16.0002 10.667C15.2668 10.667 14.6393 10.9279 14.1175 11.4497C13.5948 11.9723 13.3335 12.6003 13.3335 13.3337C13.3335 14.067 13.5948 14.6945 14.1175 15.2163C14.6393 15.739 15.2668 16.0003 16.0002 16.0003ZM16.0002 29.3337C12.4224 26.2892 9.75038 23.4612 7.98416 20.8497C6.21705 18.239 5.3335 15.8225 5.3335 13.6003C5.3335 10.267 6.40594 7.61144 8.55083 5.63366C10.6948 3.65588 13.1779 2.66699 16.0002 2.66699C18.8224 2.66699 21.3055 3.65588 23.4495 5.63366C25.5944 7.61144 26.6668 10.267 26.6668 13.6003C26.6668 15.8225 25.7837 18.239 24.0175 20.8497C22.2504 23.4612 19.5779 26.2892 16.0002 29.3337Z"
-                    fill="#384766"
-                  />
-                </svg>
-                <select class="dropdown" name="location" id="location">
-                  <option value="">Location</option>
-                  <option value="lagos">Lagos</option>
-                  <option value="kwara">Kwara</option>
-                  <option value="oyo">Oyo</option>
-                </select>
-              </div>
-              <input class="submit" type="submit" value="Search" />
+        <div class="flex_hero">
+          <div class="hero_txt">
+            Find top <span>Green Energy Talents</span> near you
+          </div>
+          <img src="./img/head_img.png" class="hero_img" />
+        </div>
+        <div class="hero_search">
+          <div class="search_box">
+            <div class="search_flex">
+              <select class="dropdown" name="job" id="worker">
+                <option value="">Job</option>
+                <option value="commercial installer">
+                  Commercial Installer
+                </option>
+                <option value="private installer">Private Installer</option>
+              </select>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M16.0002 16.0003C16.7335 16.0003 17.3615 15.739 17.8842 15.2163C18.4059 14.6945 18.6668 14.067 18.6668 13.3337C18.6668 12.6003 18.4059 11.9723 17.8842 11.4497C17.3615 10.9279 16.7335 10.667 16.0002 10.667C15.2668 10.667 14.6393 10.9279 14.1175 11.4497C13.5948 11.9723 13.3335 12.6003 13.3335 13.3337C13.3335 14.067 13.5948 14.6945 14.1175 15.2163C14.6393 15.739 15.2668 16.0003 16.0002 16.0003ZM16.0002 29.3337C12.4224 26.2892 9.75038 23.4612 7.98416 20.8497C6.21705 18.239 5.3335 15.8225 5.3335 13.6003C5.3335 10.267 6.40594 7.61144 8.55083 5.63366C10.6948 3.65588 13.1779 2.66699 16.0002 2.66699C18.8224 2.66699 21.3055 3.65588 23.4495 5.63366C25.5944 7.61144 26.6668 10.267 26.6668 13.6003C26.6668 15.8225 25.7837 18.239 24.0175 20.8497C22.2504 23.4612 19.5779 26.2892 16.0002 29.3337Z"
+                  fill="#384766"
+                />
+              </svg>
+              <select class="dropdown" name="location" id="location">
+                <option value="">State</option>
+                <option value="lagos">Lagos</option>
+                <option value="kwara">Kwara</option>
+                <option value="oyo">Oyo</option>
+              </select>
             </div>
+            <input class="submit" type="submit" value="Search" />
           </div>
         </div>
-        <div class="trust">
-          <div class="flex">
+      </div>
+      <div class="trust">
+        <div class="flex">
+          <div class="flex_trust">
             <p>Trusted by:</p>
             <img src="./img/image 22.png" alt="" />
             <img src="./img/image 23.png" alt="" />
           </div>
         </div>
       </div>
+      <div class="dot">.</div>
     </div>
     <div class="shop">
       <h1>Shop on Instollar</h1>
-
       <div class="shop_product">
-        <div class="border">
-          <div class="row">
-            <img src="./img/image 51.png" alt="" />
-            <p>Sunfield Monocrystalline Solar Panel 200W</p>
-            <div class="product_rating">
-              <div class="price">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="127"
-                  height="23"
-                  viewBox="0 0 127 23"
-                  fill="none"
-                >
-                  <path
-                    d="M12.6984 18.324L20.546 22.8L18.4635 14.364L25.3968 8.688L16.2667 7.956L12.6984 0L9.13016 7.956L0 8.688L6.93333 14.364L4.85079 22.8L12.6984 18.324Z"
-                    fill="#FFC727"
-                  />
-                  <path
-                    d="M38.0929 18.324L45.9406 22.8L43.858 14.364L50.7914 8.688L41.6612 7.956L38.0929 0L34.5247 7.956L25.3945 8.688L32.3279 14.364L30.2453 22.8L38.0929 18.324Z"
-                    fill="#FFC727"
-                  />
-                  <path
-                    d="M63.4914 18.324L71.339 22.8L69.2565 14.364L76.1898 8.688L67.0596 7.956L63.4914 0L59.9231 7.956L50.793 8.688L57.7263 14.364L55.6438 22.8L63.4914 18.324Z"
-                    fill="#FFC727"
-                  />
-                  <path
-                    d="M88.8898 18.324L96.7374 22.8L94.6549 14.364L101.588 8.688L92.4581 7.956L88.8898 0L85.3216 7.956L76.1914 8.688L83.1247 14.364L81.0422 22.8L88.8898 18.324Z"
-                    fill="#FFC727"
-                  />
-                  <path
-                    d="M114.288 18.324L122.136 22.8L120.053 14.364L126.987 8.688L117.857 7.956L114.288 0L110.72 7.956L101.59 8.688L108.523 14.364L106.441 22.8L114.288 18.324Z"
-                    fill="#FFC727"
-                  />
-                </svg>
-                <p>N85,000</p>
-              </div>
-              <button class="cart">
-                Add to Cart
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="15"
-                  viewBox="0 0 14 15"
-                  fill="none"
-                >
-                  <path
-                    d="M14 8.5H8V14.5H6V8.5H0V6.5H6V0.5H8V6.5H14V8.5Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
+        <div class="row">
+          <img src="./img/image 51.png" alt="" />
+          <p>Sunfield Monocrystalline Solar Panel 200W</p>
+          <div class="product_rating">
+            <div class="price">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="127"
+                height="23"
+                viewBox="0 0 127 23"
+                fill="none"
+              >
+                <path
+                  d="M12.6984 18.324L20.546 22.8L18.4635 14.364L25.3968 8.688L16.2667 7.956L12.6984 0L9.13016 7.956L0 8.688L6.93333 14.364L4.85079 22.8L12.6984 18.324Z"
+                  fill="#FFC727"
+                />
+                <path
+                  d="M38.0929 18.324L45.9406 22.8L43.858 14.364L50.7914 8.688L41.6612 7.956L38.0929 0L34.5247 7.956L25.3945 8.688L32.3279 14.364L30.2453 22.8L38.0929 18.324Z"
+                  fill="#FFC727"
+                />
+                <path
+                  d="M63.4914 18.324L71.339 22.8L69.2565 14.364L76.1898 8.688L67.0596 7.956L63.4914 0L59.9231 7.956L50.793 8.688L57.7263 14.364L55.6438 22.8L63.4914 18.324Z"
+                  fill="#FFC727"
+                />
+                <path
+                  d="M88.8898 18.324L96.7374 22.8L94.6549 14.364L101.588 8.688L92.4581 7.956L88.8898 0L85.3216 7.956L76.1914 8.688L83.1247 14.364L81.0422 22.8L88.8898 18.324Z"
+                  fill="#FFC727"
+                />
+                <path
+                  d="M114.288 18.324L122.136 22.8L120.053 14.364L126.987 8.688L117.857 7.956L114.288 0L110.72 7.956L101.59 8.688L108.523 14.364L106.441 22.8L114.288 18.324Z"
+                  fill="#FFC727"
+                />
+              </svg>
+              <p>N85,000</p>
             </div>
+            <button class="cart">
+              Add to Cart
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="15"
+                viewBox="0 0 14 15"
+                fill="none"
+              >
+                <path
+                  d="M14 8.5H8V14.5H6V8.5H0V6.5H6V0.5H8V6.5H14V8.5Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
           </div>
         </div>
-        <div class="border">
-          <div class="row">
-            <img src="./img/image 52.png" alt="" />
-            <p>Sunfield Monocrystalline Solar Panel 200W</p>
-            <div class="product_rating">
-              <div class="price">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="127"
-                  height="23"
-                  viewBox="0 0 127 23"
-                  fill="none"
-                >
-                  <path
-                    d="M12.6984 18.324L20.546 22.8L18.4635 14.364L25.3968 8.688L16.2667 7.956L12.6984 0L9.13016 7.956L0 8.688L6.93333 14.364L4.85079 22.8L12.6984 18.324Z"
-                    fill="#FFC727"
-                  />
-                  <path
-                    d="M38.0929 18.324L45.9406 22.8L43.858 14.364L50.7914 8.688L41.6612 7.956L38.0929 0L34.5247 7.956L25.3945 8.688L32.3279 14.364L30.2453 22.8L38.0929 18.324Z"
-                    fill="#FFC727"
-                  />
-                  <path
-                    d="M63.4914 18.324L71.339 22.8L69.2565 14.364L76.1898 8.688L67.0596 7.956L63.4914 0L59.9231 7.956L50.793 8.688L57.7263 14.364L55.6438 22.8L63.4914 18.324Z"
-                    fill="#FFC727"
-                  />
-                  <path
-                    d="M88.8898 18.324L96.7374 22.8L94.6549 14.364L101.588 8.688L92.4581 7.956L88.8898 0L85.3216 7.956L76.1914 8.688L83.1247 14.364L81.0422 22.8L88.8898 18.324Z"
-                    fill="#FFC727"
-                  />
-                  <path
-                    d="M114.288 18.324L122.136 22.8L120.053 14.364L126.987 8.688L117.857 7.956L114.288 0L110.72 7.956L101.59 8.688L108.523 14.364L106.441 22.8L114.288 18.324Z"
-                    fill="#FFC727"
-                  />
-                </svg>
-                <p>N85,000</p>
-              </div>
-              <button class="cart">
-                Add to Cart
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="15"
-                  viewBox="0 0 14 15"
-                  fill="none"
-                >
-                  <path
-                    d="M14 8.5H8V14.5H6V8.5H0V6.5H6V0.5H8V6.5H14V8.5Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
+        <div class="row">
+          <img src="./img/image 52.png" alt="" />
+          <p>Sunfield Monocrystalline Solar Panel 200W</p>
+          <div class="product_rating">
+            <div class="price">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="127"
+                height="23"
+                viewBox="0 0 127 23"
+                fill="none"
+              >
+                <path
+                  d="M12.6984 18.324L20.546 22.8L18.4635 14.364L25.3968 8.688L16.2667 7.956L12.6984 0L9.13016 7.956L0 8.688L6.93333 14.364L4.85079 22.8L12.6984 18.324Z"
+                  fill="#FFC727"
+                />
+                <path
+                  d="M38.0929 18.324L45.9406 22.8L43.858 14.364L50.7914 8.688L41.6612 7.956L38.0929 0L34.5247 7.956L25.3945 8.688L32.3279 14.364L30.2453 22.8L38.0929 18.324Z"
+                  fill="#FFC727"
+                />
+                <path
+                  d="M63.4914 18.324L71.339 22.8L69.2565 14.364L76.1898 8.688L67.0596 7.956L63.4914 0L59.9231 7.956L50.793 8.688L57.7263 14.364L55.6438 22.8L63.4914 18.324Z"
+                  fill="#FFC727"
+                />
+                <path
+                  d="M88.8898 18.324L96.7374 22.8L94.6549 14.364L101.588 8.688L92.4581 7.956L88.8898 0L85.3216 7.956L76.1914 8.688L83.1247 14.364L81.0422 22.8L88.8898 18.324Z"
+                  fill="#FFC727"
+                />
+                <path
+                  d="M114.288 18.324L122.136 22.8L120.053 14.364L126.987 8.688L117.857 7.956L114.288 0L110.72 7.956L101.59 8.688L108.523 14.364L106.441 22.8L114.288 18.324Z"
+                  fill="#FFC727"
+                />
+              </svg>
+              <p>N85,000</p>
             </div>
+            <button class="cart">
+              Add to Cart
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="15"
+                viewBox="0 0 14 15"
+                fill="none"
+              >
+                <path
+                  d="M14 8.5H8V14.5H6V8.5H0V6.5H6V0.5H8V6.5H14V8.5Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
           </div>
         </div>
-        <div class="border">
-          <div class="row">
-            <img src="./img/image 53.png" class="edit" alt="" />
-            <p>Huawei iSitePower-M 6kVA 10kWh All-In-One</p>
-            <div class="product_rating">
-              <div class="price">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="127"
-                  height="23"
-                  viewBox="0 0 127 23"
-                  fill="none"
-                >
-                  <path
-                    d="M12.6984 18.324L20.546 22.8L18.4635 14.364L25.3968 8.688L16.2667 7.956L12.6984 0L9.13016 7.956L0 8.688L6.93333 14.364L4.85079 22.8L12.6984 18.324Z"
-                    fill="#FFC727"
-                  />
-                  <path
-                    d="M38.0929 18.324L45.9406 22.8L43.858 14.364L50.7914 8.688L41.6612 7.956L38.0929 0L34.5247 7.956L25.3945 8.688L32.3279 14.364L30.2453 22.8L38.0929 18.324Z"
-                    fill="#FFC727"
-                  />
-                  <path
-                    d="M63.4914 18.324L71.339 22.8L69.2565 14.364L76.1898 8.688L67.0596 7.956L63.4914 0L59.9231 7.956L50.793 8.688L57.7263 14.364L55.6438 22.8L63.4914 18.324Z"
-                    fill="#FFC727"
-                  />
-                  <path
-                    d="M88.8898 18.324L96.7374 22.8L94.6549 14.364L101.588 8.688L92.4581 7.956L88.8898 0L85.3216 7.956L76.1914 8.688L83.1247 14.364L81.0422 22.8L88.8898 18.324Z"
-                    fill="#FFC727"
-                  />
-                  <path
-                    d="M114.288 18.324L122.136 22.8L120.053 14.364L126.987 8.688L117.857 7.956L114.288 0L110.72 7.956L101.59 8.688L108.523 14.364L106.441 22.8L114.288 18.324Z"
-                    fill="#FFC727"
-                  />
-                </svg>
-                <p>N85,000</p>
-              </div>
-              <button class="cart">
-                Add to Cart
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="15"
-                  viewBox="0 0 14 15"
-                  fill="none"
-                >
-                  <path
-                    d="M14 8.5H8V14.5H6V8.5H0V6.5H6V0.5H8V6.5H14V8.5Z"
-                    fill="white"
-                  />
-                </svg>
-              </button>
+
+        <div class="row">
+          <img src="./img/image 53.png" alt="" />
+          <p>Huawei iSitePower-M 6kVA 10kWh All-In-One</p>
+          <div class="product_rating">
+            <div class="price">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="127"
+                height="23"
+                viewBox="0 0 127 23"
+                fill="none"
+              >
+                <path
+                  d="M12.6984 18.324L20.546 22.8L18.4635 14.364L25.3968 8.688L16.2667 7.956L12.6984 0L9.13016 7.956L0 8.688L6.93333 14.364L4.85079 22.8L12.6984 18.324Z"
+                  fill="#FFC727"
+                />
+                <path
+                  d="M38.0929 18.324L45.9406 22.8L43.858 14.364L50.7914 8.688L41.6612 7.956L38.0929 0L34.5247 7.956L25.3945 8.688L32.3279 14.364L30.2453 22.8L38.0929 18.324Z"
+                  fill="#FFC727"
+                />
+                <path
+                  d="M63.4914 18.324L71.339 22.8L69.2565 14.364L76.1898 8.688L67.0596 7.956L63.4914 0L59.9231 7.956L50.793 8.688L57.7263 14.364L55.6438 22.8L63.4914 18.324Z"
+                  fill="#FFC727"
+                />
+                <path
+                  d="M88.8898 18.324L96.7374 22.8L94.6549 14.364L101.588 8.688L92.4581 7.956L88.8898 0L85.3216 7.956L76.1914 8.688L83.1247 14.364L81.0422 22.8L88.8898 18.324Z"
+                  fill="#FFC727"
+                />
+                <path
+                  d="M114.288 18.324L122.136 22.8L120.053 14.364L126.987 8.688L117.857 7.956L114.288 0L110.72 7.956L101.59 8.688L108.523 14.364L106.441 22.8L114.288 18.324Z"
+                  fill="#FFC727"
+                />
+              </svg>
+              <p>N85,000</p>
             </div>
+            <button class="cart">
+              Add to Cart
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="15"
+                viewBox="0 0 14 15"
+                fill="none"
+              >
+                <path
+                  d="M14 8.5H8V14.5H6V8.5H0V6.5H6V0.5H8V6.5H14V8.5Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
     </div>
     <div class="remark">
-        <h1>What Clients are Saying</h1>
-        <div class="flex_2">
+      <h1>What Clients are Saying</h1>
+      <div class="flex_2">
         <div class="card">
-            <img src="./img/image 32.png" alt="">
-            <h1>Mark Anthony</h1>
-            <p>This is the first freelancing company for sollar installers I have worked with. The journey has been fine so far with little hiccups.</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="176" height="31" viewBox="0 0 176 31" fill="none">
-                <path d="M16 24.7194L25.888 30.7576L23.264 19.3773L32 11.7203L20.496 10.7328L16 0L11.504 10.7328L0 11.7203L8.736 19.3773L6.112 30.7576L16 24.7194Z" fill="#FFC727"/>
-                <path d="M52 24.7194L61.888 30.7576L59.264 19.3773L68 11.7203L56.496 10.7328L52 0L47.504 10.7328L36 11.7203L44.736 19.3773L42.112 30.7576L52 24.7194Z" fill="#FFC727"/>
-                <path d="M88 24.7194L97.888 30.7576L95.264 19.3773L104 11.7203L92.496 10.7328L88 0L83.504 10.7328L72 11.7203L80.736 19.3773L78.112 30.7576L88 24.7194Z" fill="#FFC727"/>
-                <path d="M124.261 24.2927L124 24.1336L123.739 24.2927L114.866 29.7111L117.223 19.4897L117.29 19.1984L117.066 19.0013L109.212 12.1181L119.547 11.231L119.848 11.2051L119.965 10.926L124 1.29409L128.035 10.926L128.152 11.2051L128.453 11.231L138.788 12.1181L130.934 19.0013L130.71 19.1984L130.777 19.4897L133.134 29.7111L124.261 24.2927Z" fill="#FFC727" stroke="#FFC727"/>
-                <path d="M160.261 24.2927L160 24.1336L159.739 24.2927L150.866 29.7111L153.223 19.4897L153.29 19.1984L153.066 19.0013L145.212 12.1181L155.547 11.231L155.848 11.2051L155.965 10.926L160 1.29409L164.035 10.926L164.152 11.2051L164.453 11.231L174.788 12.1181L166.934 19.0013L166.71 19.1984L166.777 19.4897L169.134 29.7111L160.261 24.2927Z" fill="#FFC727" stroke="#FFC727"/>
-              </svg>
+          <img src="./img/image 32.png" alt="" />
+          <h1>Mark Anthony</h1>
+          <p>
+            This is the first freelancing company for sollar installers I have
+            worked with. The journey has been fine so far with little hiccups.
+          </p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="176"
+            height="31"
+            viewBox="0 0 176 31"
+            fill="none"
+          >
+            <path
+              d="M16 24.7194L25.888 30.7576L23.264 19.3773L32 11.7203L20.496 10.7328L16 0L11.504 10.7328L0 11.7203L8.736 19.3773L6.112 30.7576L16 24.7194Z"
+              fill="#FFC727"
+            />
+            <path
+              d="M52 24.7194L61.888 30.7576L59.264 19.3773L68 11.7203L56.496 10.7328L52 0L47.504 10.7328L36 11.7203L44.736 19.3773L42.112 30.7576L52 24.7194Z"
+              fill="#FFC727"
+            />
+            <path
+              d="M88 24.7194L97.888 30.7576L95.264 19.3773L104 11.7203L92.496 10.7328L88 0L83.504 10.7328L72 11.7203L80.736 19.3773L78.112 30.7576L88 24.7194Z"
+              fill="#FFC727"
+            />
+            <path
+              d="M124.261 24.2927L124 24.1336L123.739 24.2927L114.866 29.7111L117.223 19.4897L117.29 19.1984L117.066 19.0013L109.212 12.1181L119.547 11.231L119.848 11.2051L119.965 10.926L124 1.29409L128.035 10.926L128.152 11.2051L128.453 11.231L138.788 12.1181L130.934 19.0013L130.71 19.1984L130.777 19.4897L133.134 29.7111L124.261 24.2927Z"
+              fill="#FFC727"
+              stroke="#FFC727"
+            />
+            <path
+              d="M160.261 24.2927L160 24.1336L159.739 24.2927L150.866 29.7111L153.223 19.4897L153.29 19.1984L153.066 19.0013L145.212 12.1181L155.547 11.231L155.848 11.2051L155.965 10.926L160 1.29409L164.035 10.926L164.152 11.2051L164.453 11.231L174.788 12.1181L166.934 19.0013L166.71 19.1984L166.777 19.4897L169.134 29.7111L160.261 24.2927Z"
+              fill="#FFC727"
+              stroke="#FFC727"
+            />
+          </svg>
         </div>
         <div class="card">
-            <img src="./img/image 33.png" alt="">
-            <h1>Mark Anthony</h1>
-            <p>It's been a wonderful experience working with Instollar. Though their are some works in progress due to location a and current state of the country. </p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="176" height="31" viewBox="0 0 176 31" fill="none">
-                <path d="M16 24.7194L25.888 30.7576L23.264 19.3773L32 11.7203L20.496 10.7328L16 0L11.504 10.7328L0 11.7203L8.736 19.3773L6.112 30.7576L16 24.7194Z" fill="#FFC727"/>
-                <path d="M52 24.7194L61.888 30.7576L59.264 19.3773L68 11.7203L56.496 10.7328L52 0L47.504 10.7328L36 11.7203L44.736 19.3773L42.112 30.7576L52 24.7194Z" fill="#FFC727"/>
-                <path d="M88 24.7194L97.888 30.7576L95.264 19.3773L104 11.7203L92.496 10.7328L88 0L83.504 10.7328L72 11.7203L80.736 19.3773L78.112 30.7576L88 24.7194Z" fill="#FFC727"/>
-                <path d="M124.261 24.2927L124 24.1336L123.739 24.2927L114.866 29.7111L117.223 19.4897L117.29 19.1984L117.066 19.0013L109.212 12.1181L119.547 11.231L119.848 11.2051L119.965 10.926L124 1.29409L128.035 10.926L128.152 11.2051L128.453 11.231L138.788 12.1181L130.934 19.0013L130.71 19.1984L130.777 19.4897L133.134 29.7111L124.261 24.2927Z" fill="#FFC727" stroke="#FFC727"/>
-                <path d="M160.261 24.2927L160 24.1336L159.739 24.2927L150.866 29.7111L153.223 19.4897L153.29 19.1984L153.066 19.0013L145.212 12.1181L155.547 11.231L155.848 11.2051L155.965 10.926L160 1.29409L164.035 10.926L164.152 11.2051L164.453 11.231L174.788 12.1181L166.934 19.0013L166.71 19.1984L166.777 19.4897L169.134 29.7111L160.261 24.2927Z" fill="#FFC727" stroke="#FFC727"/>
-              </svg>
+          <img src="./img/image 33.png" alt="" />
+          <h1>Mark Anthony</h1>
+          <p>
+            It's been a wonderful experience working with Instollar. Though
+            their are some works in progress due to location a and current state
+            of the country.
+          </p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="176"
+            height="31"
+            viewBox="0 0 176 31"
+            fill="none"
+          >
+            <path
+              d="M16 24.7194L25.888 30.7576L23.264 19.3773L32 11.7203L20.496 10.7328L16 0L11.504 10.7328L0 11.7203L8.736 19.3773L6.112 30.7576L16 24.7194Z"
+              fill="#FFC727"
+            />
+            <path
+              d="M52 24.7194L61.888 30.7576L59.264 19.3773L68 11.7203L56.496 10.7328L52 0L47.504 10.7328L36 11.7203L44.736 19.3773L42.112 30.7576L52 24.7194Z"
+              fill="#FFC727"
+            />
+            <path
+              d="M88 24.7194L97.888 30.7576L95.264 19.3773L104 11.7203L92.496 10.7328L88 0L83.504 10.7328L72 11.7203L80.736 19.3773L78.112 30.7576L88 24.7194Z"
+              fill="#FFC727"
+            />
+            <path
+              d="M124.261 24.2927L124 24.1336L123.739 24.2927L114.866 29.7111L117.223 19.4897L117.29 19.1984L117.066 19.0013L109.212 12.1181L119.547 11.231L119.848 11.2051L119.965 10.926L124 1.29409L128.035 10.926L128.152 11.2051L128.453 11.231L138.788 12.1181L130.934 19.0013L130.71 19.1984L130.777 19.4897L133.134 29.7111L124.261 24.2927Z"
+              fill="#FFC727"
+              stroke="#FFC727"
+            />
+            <path
+              d="M160.261 24.2927L160 24.1336L159.739 24.2927L150.866 29.7111L153.223 19.4897L153.29 19.1984L153.066 19.0013L145.212 12.1181L155.547 11.231L155.848 11.2051L155.965 10.926L160 1.29409L164.035 10.926L164.152 11.2051L164.453 11.231L174.788 12.1181L166.934 19.0013L166.71 19.1984L166.777 19.4897L169.134 29.7111L160.261 24.2927Z"
+              fill="#FFC727"
+              stroke="#FFC727"
+            />
+          </svg>
         </div>
         <div class="card">
-            <img src="./img/image 34.png" alt="">
-            <h1>Mark Anthony</h1>
-            <p>I am so grateful for the support and resources that Instollar LLc provides for freelancers. The platform is user-friendly and makes it easy for me to find new clients and grow my business.</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="176" height="31" viewBox="0 0 176 31" fill="none">
-                <path d="M16 24.7194L25.888 30.7576L23.264 19.3773L32 11.7203L20.496 10.7328L16 0L11.504 10.7328L0 11.7203L8.736 19.3773L6.112 30.7576L16 24.7194Z" fill="#FFC727"/>
-                <path d="M52 24.7194L61.888 30.7576L59.264 19.3773L68 11.7203L56.496 10.7328L52 0L47.504 10.7328L36 11.7203L44.736 19.3773L42.112 30.7576L52 24.7194Z" fill="#FFC727"/>
-                <path d="M88 24.7194L97.888 30.7576L95.264 19.3773L104 11.7203L92.496 10.7328L88 0L83.504 10.7328L72 11.7203L80.736 19.3773L78.112 30.7576L88 24.7194Z" fill="#FFC727"/>
-                <path d="M124.261 24.2927L124 24.1336L123.739 24.2927L114.866 29.7111L117.223 19.4897L117.29 19.1984L117.066 19.0013L109.212 12.1181L119.547 11.231L119.848 11.2051L119.965 10.926L124 1.29409L128.035 10.926L128.152 11.2051L128.453 11.231L138.788 12.1181L130.934 19.0013L130.71 19.1984L130.777 19.4897L133.134 29.7111L124.261 24.2927Z" fill="#FFC727" stroke="#FFC727"/>
-                <path d="M160.261 24.2927L160 24.1336L159.739 24.2927L150.866 29.7111L153.223 19.4897L153.29 19.1984L153.066 19.0013L145.212 12.1181L155.547 11.231L155.848 11.2051L155.965 10.926L160 1.29409L164.035 10.926L164.152 11.2051L164.453 11.231L174.788 12.1181L166.934 19.0013L166.71 19.1984L166.777 19.4897L169.134 29.7111L160.261 24.2927Z" fill="#FFC727" stroke="#FFC727"/>
-              </svg>
+          <img src="./img/image 34.png" alt="" />
+          <h1>Mark Anthony</h1>
+          <p>
+            It's been a wonderful experience working with Instollar. Though
+            their are some works in progress due to location a and current state
+            of the country.
+          </p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="176"
+            height="31"
+            viewBox="0 0 176 31"
+            fill="none"
+          >
+            <path
+              d="M16 24.7194L25.888 30.7576L23.264 19.3773L32 11.7203L20.496 10.7328L16 0L11.504 10.7328L0 11.7203L8.736 19.3773L6.112 30.7576L16 24.7194Z"
+              fill="#FFC727"
+            />
+            <path
+              d="M52 24.7194L61.888 30.7576L59.264 19.3773L68 11.7203L56.496 10.7328L52 0L47.504 10.7328L36 11.7203L44.736 19.3773L42.112 30.7576L52 24.7194Z"
+              fill="#FFC727"
+            />
+            <path
+              d="M88 24.7194L97.888 30.7576L95.264 19.3773L104 11.7203L92.496 10.7328L88 0L83.504 10.7328L72 11.7203L80.736 19.3773L78.112 30.7576L88 24.7194Z"
+              fill="#FFC727"
+            />
+            <path
+              d="M124.261 24.2927L124 24.1336L123.739 24.2927L114.866 29.7111L117.223 19.4897L117.29 19.1984L117.066 19.0013L109.212 12.1181L119.547 11.231L119.848 11.2051L119.965 10.926L124 1.29409L128.035 10.926L128.152 11.2051L128.453 11.231L138.788 12.1181L130.934 19.0013L130.71 19.1984L130.777 19.4897L133.134 29.7111L124.261 24.2927Z"
+              fill="#FFC727"
+              stroke="#FFC727"
+            />
+            <path
+              d="M160.261 24.2927L160 24.1336L159.739 24.2927L150.866 29.7111L153.223 19.4897L153.29 19.1984L153.066 19.0013L145.212 12.1181L155.547 11.231L155.848 11.2051L155.965 10.926L160 1.29409L164.035 10.926L164.152 11.2051L164.453 11.231L174.788 12.1181L166.934 19.0013L166.71 19.1984L166.777 19.4897L169.134 29.7111L160.261 24.2927Z"
+              fill="#FFC727"
+              stroke="#FFC727"
+            />
+          </svg>
         </div>
-    </div>
+      </div>
     </div>
   </body>
 </html>
